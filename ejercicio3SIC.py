@@ -1,7 +1,7 @@
 from gpiozero import LED
 import time
 
-lista_LEDS = [LED(17),LED(2),LED(27),LED(4)]
+lista_LEDS = [LED(17),LED(3),LED(27),LED(4)]
 
 '''
 for i in range (0,4):
