@@ -1,8 +1,10 @@
 from gpiozero import LED
 import time
-LED = LED(17)
-print("Ingrese el tiempo que desee que permanezca encendido el LED ")
-encendido = input()
-LED.on()
-time.sleep(encendido)
-LED.off()
+led = LED(14)
+
+while True:    
+    print("Ingrese el tiempo que desee que permanezca encendido el LED ")
+    encendido = int(input())
+    led.on()
+    time.sleep(encendido)
+    led.off()
