@@ -1,6 +1,5 @@
-
 while True:
-#    try:
+    try:
         Numero= int(input("Ingrese un número: "))
         if Numero==0:
             exit()
@@ -9,5 +8,5 @@ while True:
                 print("impar")
             else:
                 print("par")
- #   except ValueError:
-#      print("Valor ingresado erroneo, ingresa un entero")
+    except ValueError:
+        print("Valor ingresado erroneo, ingresa un entero")
