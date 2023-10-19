@@ -2,7 +2,7 @@ import datetime
 from gpiozero import Button
 
 button_pin = 17
-file_path = "/home/pi/Ejercicio1.txt"
+file_path = "Ejercicio1.txt"
 button = Button(button_pin)
 
 try:
