@@ -2,7 +2,7 @@ from gpiozero import DistanceSensor, LED
 import datetime
 
 # Definir los pines GPIO para los LEDs y el sensor ultrasónico
-sensor = DistanceSensor(echo=24, trigger=23)
+sensor = DistanceSensor(echo=15, trigger=14)
 led_red = LED(17)
 led_amber = LED(27)
 led_green = LED(22)
