@@ -20,24 +20,28 @@ def show_memory(memory):
             led_amber.off()
             led_green.on()
             led_blue.off()
+            print(str(memory))
         elif memory > 25 and memory <= 50:  # Mayor de 25% pero menor a 50%
             file.write("Memoria menor a 50%\n")
             led_red.off()
             led_amber.off()
             led_green.on()
             led_blue.on()
+            print(str(memory))
         elif memory > 50 and memory <= 75:  # Entre 10 cm y 30 cm
             file.write("Memoria menor a 75%\n")
             led_red.off()
             led_amber.on()
             led_green.on()
             led_blue.on()
+            print(str(memory))
         else:
             file.write("Memoria menor al 90%\n")
             led_red.on()
             led_amber.on()
             led_green.on()
             led_blue.on()
+            print(str(memory))
 
 
 # Bucle principal para medir la distancia continuamente
