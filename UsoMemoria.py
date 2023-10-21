@@ -48,7 +48,8 @@ def show_memory(memory):
 try:
     while True:
         #Obtener uso de la memoria en porcentaje
-        memory = psutil.virtual_memory().available*100/psutil.virtual_memory().total
+        memory = psutil.cpu_percent(interval=1)
+        #memory = psutil.virtual_memory().available*100/psutil.virtual_memory().total
         show_memory(memory)
 except KeyboardInterrupt:
     led_red.off()
