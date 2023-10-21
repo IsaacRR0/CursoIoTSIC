@@ -4,10 +4,10 @@ import time
 
 
 # Definir los LEDs
-led1 = LED(17)
-led2 = LED(27)
-led3 = LED(22)
-led4 = LED(10)
+led1 = LED(22)
+led2 = LED(17)
+led3 = LED(27)
+led4 = LED(4)
 
 # Abrir y leer el archivo de texto
 with open('input.txt', 'r') as file:
